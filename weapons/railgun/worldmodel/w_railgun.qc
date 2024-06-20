@@ -5,7 +5,6 @@ $scale 1
 $surfaceprop weapon
 $keyvalues { "prop_data" { "base" "Metal.Medium" } }
 $body w_railgun "wrail_ref.smd"
-
 $sequence idle "wrail_ref.smd" ACT_VM_IDLE 1
 
 $collisionmodel "wrail_phy.smd"

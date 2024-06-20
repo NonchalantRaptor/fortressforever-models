@@ -5,7 +5,6 @@ $scale 1
 $surfaceprop weapon
 $keyvalues { "prop_data" { "base" "Metal.Medium" } }
 $body w_sniperrifle "w_sniper_ref.smd"
-
 $sequence idle "w_sniper_ref.smd" ACT_VM_IDLE 1
 
 $lod 10 {

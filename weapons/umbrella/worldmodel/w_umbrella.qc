@@ -4,8 +4,7 @@ $scale 1
 $surfaceprop default
 $keyvalues { "prop_data" { "base" "Metal.Small" } }
 $body w_umbrella "wumb_ref.smd"
-
-$sequence idle "wumb_ref.smd" ACT_VM_IDLE 1
+$sequence idle "wumb_ref.smd"
 
 $collisionmodel "wumb_phy.smd"
 {

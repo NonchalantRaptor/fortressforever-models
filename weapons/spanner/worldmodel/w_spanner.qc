@@ -4,8 +4,7 @@ $scale 1
 $surfaceprop metal
 $keyvalues { "prop_data" { "base" "Metal.Small" } }
 $body w_spanner "wspanner_ref.smd"
-
-$sequence idle "wspanner_ref.smd" ACT_VM_IDLE 1
+$sequence idle "wspanner_ref.smd"
 
 $collisionmodel "wspanner_phy.smd"
 {

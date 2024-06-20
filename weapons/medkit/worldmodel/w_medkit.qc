@@ -2,10 +2,9 @@ $modelname "weapons\medkit\w_medkit.mdl"
 $cdmaterials "models\weapons\medkit"
 $scale 1
 $surfaceprop weapon
-$keyvalues { "prop_data" { "base" "Metal.Medium" } }
+$keyvalues { "prop_data" { "base" "Metal.Small" } }
 $body studio "w_medkit_ref.smd"
-
-$sequence idle "w_medkit_ref.smd" ACT_VM_IDLE 1
+$sequence idle "w_medkit_ref.smd"
 
 $collisionmodel "w_medkit_phy.smd"
 {
