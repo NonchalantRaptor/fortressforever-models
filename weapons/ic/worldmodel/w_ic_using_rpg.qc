@@ -1,15 +1,15 @@
 $modelname "weapons/incendiarycannon/w_incendiarycannon.mdl"
 $cdmaterials "models/weapons/incendiarycannon/"
 $scale 0.85
-$surfaceprop "default"
-$keyvalues { "prop_data" { "base" "Wooden.Large" } }
-$body "Body" "ic_w_ref.smd"
+$surfaceprop weapon
+$keyvalues { "prop_data" { "base" "Metal.Medium" } }
+$body Body "ic_w_ref.smd"
 
 $lod 30 {
-      replacemodel "ic_w_ref" "ic_w_ref_LOD1"
+      replacemodel "ic_w_ref.smd" "ic_w_ref_LOD1.smd"
 }
 
-$sequence idle "ic_w_ref" ACT_IDLE 1 loop fps 1
+$sequence idle "ic_w_ref.smd" ACT_VM_IDLE 1
 
 $collisionmodel "ic_w_phy.smd" {
 	$concave

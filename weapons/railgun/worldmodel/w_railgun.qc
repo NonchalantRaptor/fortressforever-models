@@ -1,16 +1,12 @@
 $modelname "weapons\railgun\w_railgun.mdl"
-
 $cdmaterials "models\weapons\railgun"
-
 $attachment 1 "ffSkel_gunEnd" 0 0 0
-
 $scale 1
+$surfaceprop weapon
+$keyvalues { "prop_data" { "base" "Metal.Medium" } }
+$body w_railgun "wrail_ref.smd"
 
-$keyvalues { "prop_data" { "base" "metal.medium" } }
-
-$model w_railgun "wrail_ref.smd"
-
-$sequence idle "wrail_idle.smd" loop ACT_VM_IDLE 1 fps 15
+$sequence idle "wrail_ref.smd" ACT_VM_IDLE 1
 
 $collisionmodel "wrail_phy.smd"
 {
