@@ -24,10 +24,10 @@ studio "/reference/demoman_reference_rightLegShape.smd"
 blank
 }
 $texturegroup skinfamilies {
-	{ "demoman_body_blue"  "demoman_head_blue"  "demoman_acc_generic"  "sniper_accessories"}
-	{ "demoman_body_red"    "demoman_head_red" "demoman_acc_generic"  "sniper_accessories"}
-	{ "demoman_body_yellow"  "demoman_head_yellow" "demoman_acc_generic"  "sniper_accessories"}
-	{ "demoman_body_green"   "demoman_head_green" "demoman_acc_generic"  "sniper_accessories"}
+	{ "demoman_body_blue"	/*"demoman_head_blue"*/ }
+	{ "demoman_body_red"	/*"demoman_head_red"*/ }
+	{ "demoman_body_yellow" /*"demoman_head_yellow"*/ }
+	{ "demoman_body_green"	/*"demoman_head_green"*/ }
 }
 
 $lod 10 {

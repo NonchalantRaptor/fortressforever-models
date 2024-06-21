@@ -25,10 +25,10 @@ blank
 }
 
 $texturegroup skinfamilies {
-	{ "pyro_body_blue"  "pyro_head_blue"  "pyro_acc_blue"}
-	{ "pyro_body_red"    "pyro_head_red" "pyro_acc_red"}
-	{ "pyro_body_yellow"  "pyro_head_yellow" "pyro_acc_yellow" }
-	{ "pyro_body_green"   "pyro_head_green" "pyro_acc_green"}
+	{ "pyro_body_blue"	"pyro_head_blue" }
+	{ "pyro_body_red"	"pyro_head_red" }
+	{ "pyro_body_yellow"	"pyro_head_yellow" }
+	{ "pyro_body_green"	"pyro_head_green" }
 }
 
 $lod 10 {
@@ -173,10 +173,10 @@ $bonemerge ffSkel_att_righthand
 
 $collisionjoints "/reference/pyro_reference_phy.smd" {
 	$mass 90
-  	$inertia 10
-  	$damping 0.01
-  	$rotdamping 1.50
-  	$rootbone "ffSkel_Hips"
+	$inertia 10
+	$damping 0.01
+	$rotdamping 1.50
+	$rootbone "ffSkel_Hips"
 	$jointmerge "ffSkel_Hips" "ffSkel_ffSkel_Spine1"
 
  	$jointconstrain "ffSkel_spine2" x limit -48.00 48.00 0.00
@@ -189,9 +189,9 @@ $collisionjoints "/reference/pyro_reference_phy.smd" {
 
  	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
  	$jointconstrain "ffSkel_leftarm" y limit -95.00 84.00 0.00
-  	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
+	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
 
-  	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
+	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" y limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" z limit -149.00 4.00 0.00
 

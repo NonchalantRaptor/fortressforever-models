@@ -24,10 +24,10 @@ studio "/reference/scout_reference_rightLegShape.smd"
 blank
 }
 $texturegroup skinfamilies {
-	{ "scout_body_blue"  "scout_head_blue"  "scout_accessories"}
-	{ "scout_body_red"    "scout_head_red" "scout_accessories"}
-	{ "scout_body_yellow"  "scout_head_yellow" "scout_accessories" }
-	{ "scout_body_green"   "scout_head_green" "scout_accessories"}
+	{ "scout_body_blue"	"scout_head_blue" }
+	{ "scout_body_red"	"scout_head_red" }
+	{ "scout_body_yellow"	"scout_head_yellow" }
+	{ "scout_body_green"	"scout_head_green" }
 }
 
 $lod 10 {
@@ -209,10 +209,10 @@ $bonemerge ffSkel_att_righthand
 
 $collisionjoints "/reference/scout_reference_phy.smd" {
 	$mass 90
-  	$inertia 2
-  	$damping 0.01
-  	$rotdamping 4
-  	$rootbone "ffSkel_Hips"
+	$inertia 2
+	$damping 0.01
+	$rotdamping 4
+	$rootbone "ffSkel_Hips"
 	$jointmerge "ffSkel_Hips" "ffSkel_ffSkel_Spine1"
 
  	$jointconstrain "ffSkel_spine2" x limit -48.00 48.00 0.00
@@ -225,9 +225,9 @@ $collisionjoints "/reference/scout_reference_phy.smd" {
 
  	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
  	$jointconstrain "ffSkel_leftarm" y limit -95.00 84.00 0.00
-  	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
+	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
 
-  	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
+	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" y limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" z limit -149.00 4.00 0.00
 

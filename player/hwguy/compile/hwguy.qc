@@ -25,10 +25,10 @@ blank
 }
 
 $texturegroup skinfamilies {
-	{ "hwguy_body_blue"  "hwguy_head_blue"  "hwguy_acc_blue"}
-	{ "hwguy_body_red"    "hwguy_head_red" "hwguy_acc_red"}
-	{ "hwguy_body_yellow"  "hwguy_head_yellow" "hwguy_acc_yellow" }
-	{ "hwguy_body_green"   "hwguy_head_green" "hwguy_acc_green"}
+	{ "hwguy_body_blue" }
+	{ "hwguy_body_red" }
+	{ "hwguy_body_yellow" }
+	{ "hwguy_body_green" }
 }
 
 $lod 10 {
@@ -63,7 +63,7 @@ $lod 30 {
 	replacebone "ffSkel_Spine"  "ffSkel_spine2"
 }
 
- $shadowlod
+$shadowlod
 {
 	replacemodel "/reference/hwguy_reference_torsoShape.smd" "/reference/LOD/hwguy_reference_torsoShape_lod2.smd"
 	replacemodel "/reference/hwguy_reference_headShape.smd" "/reference/LOD/hwguy_reference_headShape_lod2.smd"
@@ -151,10 +151,10 @@ $bonemerge ffSkel_att_righthand
 
 $collisionjoints "/reference/hwguy_reference_phy.smd" {
 	$mass 90
-  	$inertia 10
-  	$damping 0.01
-  	$rotdamping 1.50
-  	$rootbone "ffSkel_Hips"
+	$inertia 10
+	$damping 0.01
+	$rotdamping 1.50
+	$rootbone "ffSkel_Hips"
 	$jointmerge "ffSkel_Hips" "ffSkel_ffSkel_Spine1"
 
  	$jointconstrain "ffSkel_spine2" x limit -48.00 48.00 0.00
@@ -167,9 +167,9 @@ $collisionjoints "/reference/hwguy_reference_phy.smd" {
 
  	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
  	$jointconstrain "ffSkel_leftarm" y limit -95.00 84.00 0.00
-  	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
+	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
 
-  	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
+	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" y limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" z limit -149.00 4.00 0.00
 

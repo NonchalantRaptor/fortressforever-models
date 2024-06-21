@@ -24,10 +24,10 @@ studio "/reference/engineer_reference_rightLegShape_new.smd"
 blank
 }
 $texturegroup skinfamilies {
-	{ "engineer_body_blue"  "engineer_head"  "engineer_acc_blue"}
-	{ "engineer_body_red"    "engineer_head" "engineer_acc_red"}
-	{ "engineer_body_yellow"  "engineer_head" "engineer_acc_yellow"}
-	{ "engineer_body_green"   "engineer_head" "engineer_acc_green"}
+	{ "engineer_body_blue"	"engineer_acc_blue" }
+	{ "engineer_body_red"	"engineer_acc_red" }
+	{ "engineer_body_yellow"	"engineer_acc_yellow" }
+	{ "engineer_body_green"	"engineer_acc_green" }
 }
 
 $lod 10 {
@@ -150,10 +150,10 @@ $bonemerge ffSkel_att_righthand
 
 $collisionjoints "/reference/engineer_reference_phy_new.smd" {
 	$mass 90
-  	$inertia 10
-  	$damping 0.01
-  	$rotdamping 1.50
-  	$rootbone "ffSkel_Hips"
+	$inertia 10
+	$damping 0.01
+	$rotdamping 1.50
+	$rootbone "ffSkel_Hips"
 	$jointmerge "ffSkel_Hips" "ffSkel_ffSkel_Spine1"
 
  	$jointconstrain "ffSkel_spine2" x limit -48.00 48.00 0.00
@@ -164,11 +164,11 @@ $collisionjoints "/reference/engineer_reference_phy_new.smd" {
  	$jointconstrain "ffSkel_rightarm" y limit -79.00 95.00 0.00
  	$jointconstrain "ffSkel_rightarm" z limit -93.00 23.00 0.00
 
- 	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
+	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
  	$jointconstrain "ffSkel_leftarm" y limit -95.00 84.00 0.00
   	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
 
-  	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
+	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" y limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" z limit -149.00 4.00 0.00
 

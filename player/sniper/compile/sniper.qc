@@ -1,5 +1,4 @@
 $cd ".."
-
 $modelname "player/sniper/sniper.mdl"
 //$model studio "/reference/sniper_reference.smd"
 
@@ -26,10 +25,10 @@ blank
 }
 
 $texturegroup skinfamilies {
-	{ "sniper_body_blue"  "sniper_head_blue"  "sniper_acc_blue"}
-	{ "sniper_body_red"    "sniper_head_red" "sniper_acc_red"}
-	{ "sniper_body_yellow"  "sniper_head_yellow" "sniper_acc_yellow" }
-	{ "sniper_body_green"   "sniper_head_green" "sniper_acc_green"}
+	{ "sniper_body_blue"	"sniper_head_blue" }
+	{ "sniper_body_red"	"sniper_head_red" }
+	{ "sniper_body_yellow" "sniper_head_yellow" }
+	{ "sniper_body_green" "sniper_head_green" }
 }
 
 $lod 10 {
@@ -151,10 +150,10 @@ $bonemerge ffSkel_att_righthand
 
 $collisionjoints "/reference/sniper_reference_phy.smd" {
 	$mass 90
-  	$inertia 10
-  	$damping 0.01
-  	$rotdamping 1.50
-  	$rootbone "ffSkel_Hips"
+	$inertia 10
+	$damping 0.01
+	$rotdamping 1.50
+	$rootbone "ffSkel_Hips"
 	$jointmerge "ffSkel_Hips" "ffSkel_ffSkel_Spine1"
 
  	$jointconstrain "ffSkel_spine2" x limit -48.00 48.00 0.00
@@ -165,11 +164,11 @@ $collisionjoints "/reference/sniper_reference_phy.smd" {
  	$jointconstrain "ffSkel_rightarm" y limit -79.00 95.00 0.00
  	$jointconstrain "ffSkel_rightarm" z limit -93.00 23.00 0.00
 
- 	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
- 	$jointconstrain "ffSkel_leftarm" y limit -95.00 84.00 0.00
-  	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
+	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
+	$jointconstrain "ffSkel_leftarm" y limit -95.00 84.00 0.00
+	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
 
-  	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
+	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" y limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" z limit -149.00 4.00 0.00
 

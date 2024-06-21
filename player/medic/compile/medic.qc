@@ -23,10 +23,10 @@ studio "/reference/medic_reference_rightLegShape.smd"
 blank
 }
 $texturegroup skinfamilies {
-	{ "medic_body_blue"  "medic_head_blue"  "medic_acc_blue"}
-	{ "medic_body_red"    "medic_head_red" "medic_acc_red"}
-	{ "medic_body_yellow"  "medic_head_yellow" "medic_acc_yellow" }
-	{ "medic_body_green"   "medic_head_green" "medic_acc_green"}
+	{ "medic_body_blue"	"medic_head_blue" }
+	{ "medic_body_red"	"medic_head_red" }
+	{ "medic_body_yellow"	"medic_head_yellow" }
+	{ "medic_body_green"	"medic_head_green" }
 }
 
 $lod 10 {
@@ -136,7 +136,6 @@ $bbox -16 -16 0 16 16 72
 
 $surfaceprop "flesh"
 
-
 $hboxset "fortressforever"
 
 $hbox 3 "ffSkel_Hips"	    -5.00   -6.75   -6.00     5.00    6.75    6.00
@@ -174,10 +173,10 @@ $bonemerge ffSkel_att_righthand
 
 $collisionjoints "/reference/medic_reference_phy.smd" {
 	$mass 90
-  	$inertia 2
-  	$damping 0.01
-  	$rotdamping 4
-  	$rootbone "ffSkel_Hips"
+	$inertia 2
+	$damping 0.01
+	$rotdamping 4
+	$rootbone "ffSkel_Hips"
 	$jointmerge "ffSkel_Hips" "ffSkel_ffSkel_Spine1"
 
  	$jointconstrain "ffSkel_spine2" x limit -48.00 48.00 0.00
@@ -188,11 +187,11 @@ $collisionjoints "/reference/medic_reference_phy.smd" {
  	$jointconstrain "ffSkel_rightarm" y limit -79.00 95.00 0.00
  	$jointconstrain "ffSkel_rightarm" z limit -93.00 23.00 0.00
 
- 	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
+	$jointconstrain "ffSkel_leftarm" x limit -30.00 30.00 0.00
  	$jointconstrain "ffSkel_leftarm" y limit -95.00 84.00 0.00
-  	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
+	$jointconstrain "ffSkel_leftarm" z limit -86.00 26.00 0.00
 
-  	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
+	$jointconstrain "ffSkel_leftforearm" x limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" y limit 0.00 0.00 0.00
  	$jointconstrain "ffSkel_leftforearm" z limit -149.00 4.00 0.00
 
