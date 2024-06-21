@@ -6,23 +6,15 @@ $poseparameter aim_yaw -180.00 180.00 wrap
 $poseparameter aim_pitch -60 0
 $body studio "respawn_turret.smd"
 
-//$texturegroup skinfamilies {
-//	{ "sg_lvl3_blue" "sg_lvl3_hood_blue"}
-//	{ "sg_lvl3_red"  "sg_lvl3_hood_red"  }
-//	{ "sg_lvl3_yellow" "sg_lvl3_hood_yellow"}
-//	{ "sg_lvl3_green" "sg_lvl3_hood_green" }
-//}
-
-
 // $weightlist weapon {  "ffSg_Pitch" 1.0  }
-$sequence idle "respawn_turret_idle" ACT_MINITURRET_CLOSED_IDLE 1 loop fps 1.00 
+$sequence idle "respawn_turret_idle" ACT_MINITURRET_CLOSED_IDLE 1
 //$attachment "gun_hole" "ffSg_FireAttach" 0.0 0.0 0.0 rotate 0.0 0.0 0.0
 $attachment "barrel01" "ffSg_barrel" 0 0.00 -0.00 rotate 90 -0 0
 //$attachment "barrel02" "ffSg_Barrel1" 15 0.00 -0.00 rotate -0 -0 0
 $attachment "eyes" "ffSg_body"  8 4.5 -5.5 rotate -0 -0 0
 
 
-$sequence aim_updown "respawn_turret_updown" fps 30.00
+$sequence aim_updown "respawn_turret_updown"
 
 $animation neutral "respawn_turret_spin" frames 0 0
 $sequence ready "respawn_turret_spin" ACT_MINITURRET_OPEN_IDLE 1 frames 0 0

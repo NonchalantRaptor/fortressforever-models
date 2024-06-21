@@ -1,19 +1,16 @@
 $modelname "items/armour/armour.mdl"
 $cdmaterials "models/items/armour/"
 $scale 1
-$surfaceprop default
 $keyvalues { "prop_data" { "base" "Wooden.Large" } }
-$body "Body" "armour_reference"
-$sequence idle "armour_idle" loop fps 1
+$body Body "armour_reference.smd"
+$sequence idle "armour_idle.smd"
 $texturegroup skinfamilies {
 	{ "armour_red" }
 	{ "armour_green" }
 	{ "armour_yellow" }
 }
-$collisionmodel "armour_phy.smd"
-{
-$mass 1
-$concave
-}
 
-$cdmaterials "models/items/armour/"
+$collisionmodel "armour_phy.smd" {
+	$mass 1
+	$concave
+}
