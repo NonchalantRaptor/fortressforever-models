@@ -8,6 +8,6 @@ $sequence idle "wspanner_ref.smd"
 
 $collisionmodel "wspanner_phy.smd"
 {
-	$mass 3.0
+	$mass 3
 	$concave
 }

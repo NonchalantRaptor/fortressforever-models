@@ -9,6 +9,6 @@ $sequence idle "shield_ref.smd" ACT_VM_IDLE 1
 
 $collisionmodel "shield_phys.smd"
 {
-	$mass 10.0 // Mass in kilograms
+	$mass 10	// Mass in kilograms
 	//$concave
 }

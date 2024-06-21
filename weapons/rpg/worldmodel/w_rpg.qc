@@ -11,6 +11,7 @@ $lod 10 {
 $lod 40 {
 	replacemodel "rpg_ref.smd" "rpg_lod2.smd"
 }
+
 $collisionmodel "rpg_lod2.smd" {	// temp until phys model madee
 	$mass 15
 	$inertia 1

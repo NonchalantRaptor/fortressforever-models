@@ -5,6 +5,6 @@ $surfaceprop crowbar
 $sequence idle "crow_ref.smd"
 
 $collisionmodel "crow_phy.smd" {
-	$mass 8.0
-	$inertia 1.00
+	$mass 8
+	$inertia 1
 }

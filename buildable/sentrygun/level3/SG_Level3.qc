@@ -35,10 +35,10 @@ $bodygroup specialFX {
 }
 
 $texturegroup skinfamilies {
-  { "sg_lvl3_blue.vmt" "sg_fx_blue.vmt" }
-  { "sg_lvl3_red.vmt" "sg_fx_red.vmt" }
-  { "sg_lvl3_yellow.vmt" "sg_fx_yellow.vmt" }
-  { "sg_lvl3_green.vmt" "sg_fx_green.vmt" }
+  { "sg_lvl3_blue" "sg_fx_blue" }
+  { "sg_lvl3_red" "sg_fx_red" }
+  { "sg_lvl3_yellow" "sg_fx_yellow" }
+  { "sg_lvl3_green" "sg_fx_green" }
 }
 $lod 25 { 
 	replacemodel "reference_SG_Level3.smd" "LOD1_SG_Level3.smd"

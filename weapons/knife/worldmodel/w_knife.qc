@@ -8,6 +8,6 @@ $sequence idle "w_knife_ref.smd"
 
 $collisionmodel "w_knife_phy.smd"
 {
-	$mass 3.0 // Mass in kilograms
+	$mass 3	// Mass in kilograms
 	$concave
 }

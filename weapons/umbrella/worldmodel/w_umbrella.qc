@@ -8,6 +8,6 @@ $sequence idle "wumb_ref.smd"
 
 $collisionmodel "wumb_phy.smd"
 {
-	$mass 3.0 // Mass in kilograms
+	$mass 3	// Mass in kilograms
 	$concave
 }

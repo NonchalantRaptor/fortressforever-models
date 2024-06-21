@@ -17,6 +17,6 @@ $sequence attack1 "attack1.smd" ACT_VM_PRIMARYATTACK 1 {{ event AE_NPC_MUZZLEFLA
 
 $collisionmodel "w_sniper_ref.smd"
 {
-	$mass 10.0
+	$mass 10
 	$concave
 }

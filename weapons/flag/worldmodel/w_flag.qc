@@ -13,8 +13,7 @@ $texturegroup skinfamilies
 	{ "flag_neutral" }
 }
 
-$collisionmodel "w_flag_phy.smd"
-{
-	$mass 3.0 // Mass in kilograms
+$collisionmodel "w_flag_phy.smd" {
+	$mass 3	// Mass in kilograms
 	$concave
 }

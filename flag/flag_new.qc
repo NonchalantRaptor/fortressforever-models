@@ -3,10 +3,10 @@ $model "Body" "flag_reference.smd"
 $cdmaterials "models\flag\"
 $texturegroup skinfamilies
 {
-	{ "flag_blue.vmt" }
-	{ "flag_red.vmt" }
-	{ "flag_yellow.vmt" }
-	{ "flag_green.vmt" }
+	{ "flag_blue" }
+	{ "flag_red" }
+	{ "flag_yellow" }
+	{ "flag_green" }
 }
 
 $surfaceprop "carpet"

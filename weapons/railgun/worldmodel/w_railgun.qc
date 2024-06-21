@@ -9,6 +9,6 @@ $sequence idle "wrail_ref.smd" ACT_VM_IDLE 1
 
 $collisionmodel "wrail_phy.smd"
 {
-	$mass 3.0 // Mass in kilograms
+	$mass 3	// Mass in kilograms
 	$concave
 }

@@ -7,10 +7,10 @@ $body Body "ic_w_ref.smd"
 $sequence idle "ic_w_ref.smd" ACT_VM_IDLE 1
 
 $lod 30 {
-      replacemodel "ic_w_ref.smd" "ic_w_ref_LOD1.smd"
+	replacemodel "ic_w_ref.smd" "ic_w_ref_LOD1.smd"
 }
 
 $collisionmodel "ic_w_phy.smd" {
 	$concave
-	$mass 5.0
+	$mass 5
 }

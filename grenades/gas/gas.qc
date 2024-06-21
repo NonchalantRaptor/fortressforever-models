@@ -1,23 +1,16 @@
 $modelname "grenades\gas\gas"
 $cdmaterials "models\grenades\gas\"
+$surfaceprop metal
 $cliptotextures
-
 $scale 0.1
-
 //$poseparameter aim_yaw -180.00 180.00 wrap
 //$poseparameter aim_pitch -60 0
-
-$bodygroup studio { 
-  studio "GASGRENADE_REF.smd" 
-}
-
+$body studio "GASGRENADE_REF.smd"
 
 $sequence idle "gas_idle" ACT_GAS_IDLE 1 loop fps 1.00
-$sequence deploy "gas_deploy" ACT_GAS_DEPLOY 1 fps 30.00
+$sequence deploy "gas_deploy" ACT_GAS_DEPLOY 1
 $sequence deploy_idle "gas_deploy_idle" ACT_GAS_DEPLOY_IDLE 1 loop fps 1.00
 
-
-//$surfaceprop "metal"
 //$jointsurfaceprop "main01"	 "metal"
 //$jointsurfaceprop "h4p01"	 "metal"
 //$jointsurfaceprop "l5p01"	 "metal"
@@ -33,8 +26,7 @@ $sequence deploy_idle "gas_deploy_idle" ACT_GAS_DEPLOY_IDLE 1 loop fps 1.00
 //$hboxset "default"
 //$hbox 0 "main01"	    -45 -45 -45 45 45 45
 
-$collisionmodel "gasgrenade_phy.smd"
-{
-$mass 90.0
-$concave
+$collisionmodel "gasgrenade_phy.smd" {
+	$mass 90
+	$concave
 }

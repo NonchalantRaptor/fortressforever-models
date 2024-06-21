@@ -6,9 +6,9 @@ $keyvalues { "prop_data" { "base" "Wooden.Large" } }
 $body "Body" "backpack"
 $sequence idle "backpack_idle" loop fps 1
 $texturegroup skinfamilies {
-	{ "backpack_blue.vmt" }
-	{ "backpack_red.vmt" }
-	{ "backpack_green.vmt" }
+	{ "backpack_blue" }
+	{ "backpack_red" }
+	{ "backpack_green" }
 }
 $collisionmodel "backpack_phy.smd"
 {

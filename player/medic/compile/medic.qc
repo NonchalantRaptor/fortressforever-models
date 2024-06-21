@@ -1,60 +1,50 @@
 $modelname "player/medic/medic.mdl"
 $cd ".."
 //$model studio "/reference/medic_reference.smd"
-$bodygroup torso
-{
-studio "/reference/medic_reference_torsoShape.smd"
-blank
-}
-$bodygroup head
-{
+$body studio "/reference/medic_reference_torsoShape.smd"
+$bodygroup head {
 studio "/reference/medic_reference_headShape.smd"
 blank
 }
-$bodygroup leftArm
-{
+$bodygroup leftArm {
 studio "/reference/medic_reference_leftArmShape.smd"
 blank
 }
-$bodygroup leftLeg
-{
+$bodygroup leftLeg {
 studio "/reference/medic_reference_leftLegShape.smd"
 blank
 }
-$bodygroup rightArm
-{
+$bodygroup rightArm {
 studio "/reference/medic_reference_rightArmShape.smd"
 blank
 }
-$bodygroup rightLeg
-{
+$bodygroup rightLeg {
 studio "/reference/medic_reference_rightLegShape.smd"
 blank
 }
 $texturegroup skinfamilies {
-	{ "medic_body_blue.vmt"  "medic_head_blue.vmt"  "medic_acc_blue.vmt"}
-	{ "medic_body_red.vmt"    "medic_head_red.vmt" "medic_acc_red.vmt"}
-	{ "medic_body_yellow.vmt"  "medic_head_yellow.vmt" "medic_acc_yellow.vmt" }
-	{ "medic_body_green.vmt"   "medic_head_green.vmt" "medic_acc_green.vmt"}
+	{ "medic_body_blue"  "medic_head_blue"  "medic_acc_blue"}
+	{ "medic_body_red"    "medic_head_red" "medic_acc_red"}
+	{ "medic_body_yellow"  "medic_head_yellow" "medic_acc_yellow" }
+	{ "medic_body_green"   "medic_head_green" "medic_acc_green"}
 }
 
- $lod 10 {
+$lod 10 {
+	replacemodel "/reference/medic_reference_torsoShape.smd" "/reference/LOD/medic_lod1_torsoShape.smd"
+//	replacemodel "/reference/medic_reference_headShape.smd" "/reference/medic_reference_head_lodShape2.smd"
+//	replacemodel "/reference/medic_reference_leftArmShape.smd" "/reference/medic_reference_leftArm_lodShape2.smd"
+//	replacemodel "/reference/medic_reference_rightArmShape.smd" "/reference/medic_reference_rightArm_lodShape2.smd"
+//	replacemodel "/reference/medic_reference_leftLegShape.smd" "/reference/medic_reference_leftLeg_lodShape2.smd"
+//	replacemodel "/reference/medic_reference_rightLegShape.smd" "/reference/medic_reference_rightLeg_lodShape2.smd"
+}
 
- 	replacemodel "/reference/medic_reference_torsoShape.smd" "/reference/LOD/medic_lod1_torsoShape.smd"
-      //replacemodel "/reference/medic_reference_headShape.smd" "/reference/medic_reference_head_lodShape2.smd"
-      //replacemodel "/reference/medic_reference_leftArmShape.smd" "/reference/medic_reference_leftArm_lodShape2.smd"
-      //replacemodel "/reference/medic_reference_rightArmShape.smd" "/reference/medic_reference_rightArm_lodShape2.smd"
-      //replacemodel "/reference/medic_reference_leftLegShape.smd" "/reference/medic_reference_leftLeg_lodShape2.smd"
-      //replacemodel "/reference/medic_reference_rightLegShape.smd" "/reference/medic_reference_rightLeg_lodShape2.smd"
- }
-
- $lod 35 {
- 	replacemodel "/reference/medic_reference_torsoShape.smd" "//reference/LOD/medic_lod2_torsoShape.smd"
-// 	replacemodel "/reference/medic_reference_headShape.smd" "/reference/medic_reference_head_lodShape4.smd"
-// 	replacemodel "/reference/medic_reference_leftArmShape.smd" "/reference/medic_reference_leftArm_lodShape4.smd"
-// 	replacemodel "/reference/medic_reference_rightArmShape.smd" "/reference/medic_reference_rightArm_lodShape4.smd"
-// 	replacemodel "/reference/medic_reference_leftLegShape.smd" "/reference/medic_reference_leftLeg_lodShape4.smd"
-// 	replacemodel "/reference/medic_reference_rightLegShape.smd" "/reference/medic_reference_rightLeg_lodShape4.smd"
+$lod 35 {
+	replacemodel "/reference/medic_reference_torsoShape.smd" "//reference/LOD/medic_lod2_torsoShape.smd"
+//	replacemodel "/reference/medic_reference_headShape.smd" "/reference/medic_reference_head_lodShape4.smd"
+//	replacemodel "/reference/medic_reference_leftArmShape.smd" "/reference/medic_reference_leftArm_lodShape4.smd"
+//	replacemodel "/reference/medic_reference_rightArmShape.smd" "/reference/medic_reference_rightArm_lodShape4.smd"
+//	replacemodel "/reference/medic_reference_leftLegShape.smd" "/reference/medic_reference_leftLeg_lodShape4.smd"
+//	replacemodel "/reference/medic_reference_rightLegShape.smd" "/reference/medic_reference_rightLeg_lodShape4.smd"
 
 	bonetreecollapse "ffSkel_neck"
 	bonetreecollapse "ffSkel_leftForeArm"
@@ -71,15 +61,15 @@ $texturegroup skinfamilies {
 	replacebone "ffSkel_Spine"  "ffSkel_spine2"
 }
 
- 	$shadowlod 
- 	{
-          replacemodel "/reference/medic_reference_torsoShape.smd" "//reference/LOD/medic_lod2_torsoShape.smd"
- 	//replacemodel "/reference/medic_reference_headShape.smd" "/reference/medic_reference_head_lodShape5.smd"
- 	//replacemodel "/reference/medic_reference_leftArmShape.smd" "/reference/medic_reference_leftArm_lodShape5.smd"
- 	//replacemodel "/reference/medic_reference_rightArmShape.smd" "/reference/medic_reference_rightArm_lodShape5.smd"
- 	//replacemodel "/reference/medic_reference_leftLegShape.smd" "/reference/medic_reference_leftLeg_lodShape5.smd"
- 	//replacemodel "/reference/medic_reference_rightLegShape.smd" "/reference/medic_reference_rightLeg_lodShape5.smd"
-	} 
+$shadowlod
+{
+	replacemodel "/reference/medic_reference_torsoShape.smd" "//reference/LOD/medic_lod2_torsoShape.smd"
+//	replacemodel "/reference/medic_reference_headShape.smd" "/reference/medic_reference_head_lodShape5.smd"
+//	replacemodel "/reference/medic_reference_leftArmShape.smd" "/reference/medic_reference_leftArm_lodShape5.smd"
+//	replacemodel "/reference/medic_reference_rightArmShape.smd" "/reference/medic_reference_rightArm_lodShape5.smd"
+//	replacemodel "/reference/medic_reference_leftLegShape.smd" "/reference/medic_reference_leftLeg_lodShape5.smd"
+//	replacemodel "/reference/medic_reference_rightLegShape.smd" "/reference/medic_reference_rightLeg_lodShape5.smd"
+}
 
 $attachment "attach_head" "ffSkel_Head" 0 0 0 rotate 0 0 0
 $attachment "attach_leftArm" "ffSkel_LeftArm" 0 0 0 rotate -80 0 0
@@ -104,18 +94,8 @@ $attachment "ffAtt_flag" "ffSkel_Spine3" 5 3 0 rotate  0 0 0
 
 
 //}
- 
-//$cdmaterials "models\police\"
-//$cdmaterials "models\humans\male\"
+
 $cdmaterials "models/player/medic/"
-// Model uses material "bmouth.vmt"
-// Model uses material "eyeball_l.vmt"
-// Model uses material "barneyface.vmt"
-// Model uses material "eyeball_r.vmt"
-// Model uses material "metrocop_sheet.vmt"
-// Model uses material "pupil_r.vmt"
-// Model uses material "glint.vmt"
-// Model uses material "pupil_l.vmt"
 
 $attachment "eyes" "ffSkel_head" 5.00 0.00 0.05 rotate 0 -20 -90
 $attachment "mouth" "ffSkel_head" 0.30 -5.70 -0.00 rotate 0.00 -80.00 -90.00
@@ -123,14 +103,7 @@ $attachment "chest" "ffSkel_Spine2" 5.00 4.00 -0.00 rotate -0.00 90.00 90.00
 $attachment "helmet_attachment" "ffSkel_head" 2.66 -1.60 -0.00 rotate 0.00 -82.95 -90.00
 
 $includemodel "player/ff_player_shared.mdl"
-//$includemodel "player/cs_player_shared.mdl"
-//$includemodel "player/ak_anims_t.mdl"
-//$includemodel "barney_animations.mdl"
-//$includemodel "/humans/male_shared.mdl"
-//$includemodel "/hl2dm/male_shared.mdl"
-//$includemodel "barney_postures.mdl"
-//$includemodel "barney_gestures.mdl"
-$surfaceprop "flesh"
+$surfaceprop flesh
 
 $bbox -16 -16 0 16 16 72 
 //$bbox -10 -18 0 26 18 72
@@ -196,12 +169,12 @@ $hbox 6 "ffSkel_LeftToeBases"	    -4.00   -2.50   -2.00     4.00    2.50    2.00
 $ikchain rfoot ffSkel_RightFoot 
 $ikchain lfoot ffSkel_LeftFoot
 
-$sequence ragdoll "/reference/ragdoll" ACT_DIERAGDOLL 1 fps 30.00
+$sequence ragdoll "/reference/medic_reference_torsoShape.smd" ACT_DIERAGDOLL 1
 $bonemerge ffSkel_att_righthand
-$collisionjoints "/reference/medic_reference_phy.smd" {
 
-	$mass 90.0
-  	$inertia 2.00
+$collisionjoints "/reference/medic_reference_phy.smd" {
+	$mass 90
+  	$inertia 2
   	$damping 0.01
   	$rotdamping 4
   	$rootbone "ffSkel_Hips"
@@ -263,4 +236,3 @@ $collisionjoints "/reference/medic_reference_phy.smd" {
 	$jointconstrain "ffSkel_rightfoot" y limit -10.00 6.00 0.00
 	$jointconstrain "ffSkel_rightfoot" z limit -5.00 15.00 0.00
 }
-

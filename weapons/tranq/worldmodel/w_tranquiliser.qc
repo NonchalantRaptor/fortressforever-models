@@ -11,6 +11,6 @@ $sequence attack1 "attack1.smd" ACT_VM_PRIMARYATTACK 1 {{ event AE_NPC_MUZZLEFLA
 
 $collisionmodel "w_tranq_phy.smd"
 {
-	$mass 3.0 // Mass in kilograms
+	$mass 3	// Mass in kilograms
 	$concave
 }

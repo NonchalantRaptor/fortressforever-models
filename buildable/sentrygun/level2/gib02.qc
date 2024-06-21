@@ -1,9 +1,9 @@
 $modelname "buildable\sg\gibs\2b.mdl"
-$model "studio" "gib02.smd"
+$body studio "gib02.smd"
 $cdmaterials "models\buildable\sg"
 $cdmaterials "models\buildable\dispenser\"
 
-$surfaceprop "metal"
+$surfaceprop metal
 
 $sequence idle "gib02.smd"
 $autocenter

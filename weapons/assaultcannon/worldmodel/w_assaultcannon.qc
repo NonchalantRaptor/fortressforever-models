@@ -27,8 +27,8 @@ $lod 30 {
 $lod 60 {
 	replacemodel "ac_ref.SMD" "ac_lod2.smd"
 }
-$collisionmodel "w_assaultcannon_ref.smd"	// TEMP
-{
-	$mass 3.0 // Mass in kilograms
+
+$collisionmodel "w_assaultcannon_ref.smd" {	// TEMP
+	$mass 3	// Mass in kilograms
 	$concave
 }
