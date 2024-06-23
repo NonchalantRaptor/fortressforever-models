@@ -11,6 +11,7 @@ Anims	- Decs
 $modelname "items/ball/ball2.mdl"
 $cdmaterials "models\items\ball\"
 $scale 1.8
+$surfaceprop rubber
 $body studio "football.smd"
 $sequence idle "football.smd"
 

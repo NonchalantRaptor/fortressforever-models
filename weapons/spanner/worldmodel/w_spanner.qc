@@ -2,7 +2,7 @@ $modelname "weapons\spanner\w_spanner.mdl"
 $cdmaterials "models\weapons\spanner"
 $scale 1
 $surfaceprop metal
-$keyvalues { "prop_data" { "base" "Metal.Small" } }
+$keyvalues { prop_data { "base" "Metal.Small" } }
 $body w_spanner "wspanner_ref.smd"
 $sequence idle "wspanner_ref.smd"
 

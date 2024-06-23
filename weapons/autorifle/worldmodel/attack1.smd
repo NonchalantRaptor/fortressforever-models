@@ -1,0 +1,17 @@
+// Created by Crowbar 0.74
+version 1
+nodes
+  0 "ffSkel_att_righthand" -1
+  1 "ffSkel.Weapon.Bone" 0
+  2 "ffSkel_gunEnd" 1
+end
+skeleton
+  time 0
+    0 -21.717862 1.876262 38.249275 -1.572831 0.763348 -0.000580   # pos: anim+bone   rot: anim+bone
+    1 1.999993 -0.000002 0.000000 3.141350 0.199707 1.486667   # pos: desc_bone   rot: desc_bone
+    2 24.585501 0.000000 -0.000003 -0.148715 0.213711 0.070837   # pos: desc_bone   rot: desc_bone
+  time 1
+    0 -21.717862 1.876262 38.249275 -1.572831 0.763348 -0.000580   # pos: anim+bone   rot: anim+bone
+    1 1.999993 -0.000002 0.000000 3.141350 0.199707 1.486667   # pos: desc_bone   rot: desc_bone
+    2 24.585501 0.000000 -0.000003 -0.148715 0.213711 0.070837   # pos: desc_bone   rot: desc_bone
+end

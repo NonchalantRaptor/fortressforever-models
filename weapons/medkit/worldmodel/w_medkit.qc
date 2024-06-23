@@ -2,7 +2,7 @@ $modelname "weapons\medkit\w_medkit.mdl"
 $cdmaterials "models\weapons\medkit"
 $scale 1
 $surfaceprop weapon
-$keyvalues { "prop_data" { "base" "Metal.Small" } }
+$keyvalues { prop_data { "base" "Metal.Small" } }
 $body studio "w_medkit_ref.smd"
 $sequence idle "w_medkit_ref.smd"
 

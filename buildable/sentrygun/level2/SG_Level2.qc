@@ -28,7 +28,7 @@ $bodygroup specialFX {
 
 $texturegroup skinfamilies {
 	{ "sg_lvl2_blue" "sg_lvl2_hood_blue" "sg_fx_blue" }
-	{ "sg_lvl2_red" "sg_lvl2_hood_red" "sg_fx_red" }	
+	{ "sg_lvl2_red" "sg_lvl2_hood_red" "sg_fx_red" }
 	{ "sg_lvl2_yellow" "sg_lvl2_hood_yellow" "sg_fx_yellow" }
 	{ "sg_lvl2_green" "sg_lvl2_hood_green" "sg_fx_green" }
 }
@@ -38,8 +38,8 @@ $lod 25 {
 $lod 60 {
 	replacemodel "reference_SG_Level2.smd" "LOD2_SG_Level2.smd"
 }
-$sequence aim_yaw	"anim_SG_Level2" fps 30
-$sequence aim_pitch	"anim_SG_Level2" fps 30
+$sequence aim_yaw	"anim_SG_Level2"
+$sequence aim_pitch	"anim_SG_Level2"
 
 $weightlist sg_yaw	{ "bone_sgYaw" 1.0 }
 $weightlist sg_pitch	{ "bone_sgPitch" 1.0 }

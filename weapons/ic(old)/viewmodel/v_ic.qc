@@ -19,13 +19,12 @@ for future modification.
 *****************************
 */
 
-$modelname 		"weapons/incendiarycannon/v_incendiarycannon.mdl"
-$cdmaterials 		"models/weapons/rpg"
-$cdmaterials 		"models/v_arms"
-$origin 		0 0 0
-$scale 			1.0
-
-$body "studio" "reference_RPG.smd"
+$modelname "weapons/incendiarycannon/v_incendiarycannon.mdl"
+$cdmaterials "models/weapons/rpg"
+$cdmaterials "models/v_arms"
+$origin 0 0 0
+$scale 1
+$body studio "reference_RPG.smd"
 
 /*
 ***Bodygroups for different arms (to be added later [maybe! :P])***
@@ -35,10 +34,9 @@ $bodygroup engineerArms {"studio" "reference_RPG_engineerArms.smd"}
 $bodygroup civilianArms {"studio" "reference_RPG_civilianArms.smd"}
 */
 
-$sequence Draw_with0 "anim_Draw_with0" ACT_VM_DRAW_WITH0 1 fps 30.00 fadein 0
+$sequence Draw_with0 "anim_Draw_with0" ACT_VM_DRAW_WITH0 1 fadein 0
 
-$sequence Idle_with0 "anim_Idle_with0" loop ACT_VM_IDLE_WITH0 8 fps 30.00
+$sequence Idle_with0 "anim_Idle_with0" loop ACT_VM_IDLE_WITH0 8
+$sequence DeepIdle_with0 "anim_DeepIdle_with0" loop ACT_VM_DEEPIDLE_WITH0 1
 
-$sequence DeepIdle_with0 "anim_DeepIdle_with0" loop ACT_VM_DEEPIDLE_WITH0 1 fps 30.00
-
-$sequence Fire_1to0 "anim_Fire_1to0" ACT_VM_PRIMARYATTACK 1 fps 30.00 fadein 0 fadeout 0
+$sequence Fire_1to0 "anim_Fire_1to0" ACT_VM_PRIMARYATTACK 1 fadein 0 fadeout 0

@@ -3,7 +3,7 @@ $cdmaterials "models\weapons\tommygun"
 $attachment 1 "ffSkel_gunEnd" 0 0 0
 $scale 1
 $surfaceprop weapon
-$keyvalues { "prop_data" { "base" "Metal.Medium" } }
+$keyvalues { prop_data { "base" "Metal.Medium" } }
 $body w_tommygun "w_tommyREF.smd"
 $sequence idle "w_tommyREF.smd" ACT_VM_IDLE 1
 

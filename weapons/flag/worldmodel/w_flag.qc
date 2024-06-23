@@ -2,7 +2,7 @@ $modelname "flag\w_flag.mdl"
 $body Body "w_flag_ref.smd"
 $surfaceprop carpet
 $cdmaterials "models\flag"
-$keyvalues { "prop_data" { "base" "Metal.Medium" } }
+$keyvalues { prop_data { "base" "Metal.Medium" } }
 $sequence idle "w_flag_ref.smd"
 $texturegroup skinfamilies
 {

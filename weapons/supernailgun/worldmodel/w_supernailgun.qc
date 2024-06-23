@@ -3,7 +3,7 @@ $cdmaterials "models\weapons\supernailgun"
 $attachment 1 "ffSkel_gunEnd" 0.00 0.00 0.00 rotate 0 0 0
 $scale 1
 $surfaceprop weapon
-$keyvalues { "prop_data" { "base" "Metal.Medium" } }
+$keyvalues { prop_data { "base" "Metal.Medium" } }
 $body studio "w_supernailgun_ref.smd"
 $sequence idle "w_supernailgun_ref.smd" ACT_VM_IDLE 1
 

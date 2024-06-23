@@ -1,16 +1,17 @@
 $modelname "items/backpack/backpack.mdl"
-$cdmaterials "models/items/backpack/"
-$scale 1
-$keyvalues { "prop_data" { "base" "Wooden.Large" } }
-$body Body "backpack.smd"
+$body studio "backpack.smd"
+$cdmaterials "models\items\backpack\"
 $sequence idle "backpack.smd"
-$texturegroup skinfamilies {
-	{ "backpack_blue" }
-	{ "backpack_red" }
-	{ "backpack_green" }
-}
 
-$collisionmodel "backpack_phy.smd" {
-	$mass 1
-	$concave
+$lod 10 {
+	replacemodel "backpack.smd" "backpack_lod1.smd"
+}
+$lod 35 {
+	replacemodel "backpack.smd" "backpack_lod2.smd"
+}
+$lod 60 {
+	replacemodel "backpack.smd" "backpack_lod3.smd"
+}
+$lod 150 {
+	replacemodel "backpack.smd" "backpack_lod4.smd"
 }

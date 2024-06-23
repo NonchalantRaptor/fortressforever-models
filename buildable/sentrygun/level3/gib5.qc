@@ -19,7 +19,7 @@ $keyvalues
 {
 	prop_data
 	{
-		base		Metal.Small 
+		base		Metal.Small
 		physicsmode	2
 	}
 }

@@ -9,7 +9,7 @@ $body studio "ac_ref.SMD"
 $sequence idle "ac_ref.SMD" ACT_VM_IDLE 1
 
 $poseparameter ac_rotate -180 180 wrap
-$sequence ac_rotate "ac_fire" fps 30
+$sequence ac_rotate "ac_fire"
 
 $weightlist ac_rot { "ffSkel_gunEnd" 1.0 }
 

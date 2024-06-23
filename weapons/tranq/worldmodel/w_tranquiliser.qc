@@ -3,7 +3,7 @@ $cdmaterials "models\weapons\tranq"
 $attachment 1 "ffSkel_gunEnd" 0 0 0
 $scale 1
 $surfaceprop weapon
-$keyvalues { "prop_data" { "base" "Metal.Small" } }
+$keyvalues { prop_data { "base" "Metal.Small" } }
 $body w_tranquiliser "w_tranq_ref.smd"
 $sequence idle "w_tranq_ref.smd" ACT_VM_IDLE 1
 

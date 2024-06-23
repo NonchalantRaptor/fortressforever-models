@@ -1,16 +1,21 @@
-$modelname "items/armour/armour.mdl"
-$cdmaterials "models/items/armour/"
+$modelname "items\armour\armour.mdl"
+$staticprop
 $scale 1
-$keyvalues { "prop_data" { "base" "Wooden.Large" } }
-$body Body "armour_reference.smd"
-$sequence idle "armour_idle.smd"
-$texturegroup skinfamilies {
+$body studio "armour.smd"
+$sequence idle "armour.smd"
+$surfaceprop default
+$contents "solid"
+$illumposition 0.005 3.323 18.203
+$cdmaterials "models\items\armour\"
+$texturegroup skinfamilies
+{
+	{ "armour_blue" }
 	{ "armour_red" }
 	{ "armour_green" }
 	{ "armour_yellow" }
 }
 
 $collisionmodel "armour_phy.smd" {
-	$mass 1
+	$mass 100
 	$concave
 }

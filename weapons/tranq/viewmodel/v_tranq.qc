@@ -8,15 +8,13 @@ Anims	- FooleyCooley
 *****************************
 */
 
-$modelname 		"weapons/tranq/v_tranq.mdl"
-$cdmaterials 		"models/weapons/tranq"
-$cdmaterials 		"models/v_arms"
-$origin 		0 0 0
-$scale 			1.0
-
+$modelname "weapons/tranq/v_tranq.mdl"
+$cdmaterials "models/weapons/tranq"
+$cdmaterials "models/v_arms"
+$origin 0 0 0
+$scale 1.0
 $attachment "1" "bone_muzzle" 0 0 0 rotate 0 0 0
-
-$body "studio" "reference_Tranq.smd"
+$body studio "reference_Tranq.smd"
 
 /*
 ***Bodygroups for different arms (to be added later [maybe! :P])***
@@ -26,15 +24,15 @@ $bodygroup engineerArms {"studio" "reference_Tranq_engineerArms.smd"}
 $bodygroup civilianArms {"studio" "reference_Tranq_civilianArms.smd"}
 */
 
-$sequence Draw "anim_Draw" ACT_VM_DRAW 1 fps 30.00 fadein 0 {
-  { event AE_CL_PLAYSOUND 0 "Tranq.cock" }
+$sequence Draw "anim_Draw.smd" ACT_VM_DRAW 1 fadein 0 {
+	{ event AE_CL_PLAYSOUND 0 "Tranq.Cock" }
 }
 
-$sequence Idle1 "anim_Idle1" loop ACT_VM_IDLE 1 fps 30.00
-$sequence Idle2 "anim_Idle2" loop ACT_VM_IDLE 1 fps 30.00
-$sequence Idle3 "anim_Idle3" loop ACT_VM_IDLE 1 fps 30.00
+$sequence Idle1 "anim_Idle1.smd" loop ACT_VM_IDLE 1
+$sequence Idle2 "anim_Idle2.smd" loop ACT_VM_IDLE 1
+$sequence Idle3 "anim_Idle3.smd" loop ACT_VM_IDLE 1
 
-$sequence Fire "anim_Fire" ACT_VM_PRIMARYATTACK 1 fps 30.00 fadein 0 {
-  { event AE_MUZZLEFLASH 0 "PISTOL 1" }
-  { event AE_CL_PLAYSOUND 23 "Tranq.cock" }
+$sequence Fire "anim_Fire.smd" ACT_VM_PRIMARYATTACK 1 fadein 0 {
+	{ event AE_MUZZLEFLASH 0 "PISTOL 1" }
+	{ event AE_CL_PLAYSOUND 23 "Tranq.Cock" }
 }
