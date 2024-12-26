@@ -8,8 +8,4 @@
 //	"$envmap" 			"env_cubemap"
 	//"$normalmapalphaenvmapmask" 	1
 //	"$envmaptint" 			"[0.3 0.3 0.3]"
-//ELMO
-	"$selfillum" "1"
-	"$selfillumtint" "[1.5 1.5 1.5]"
-//ELMO
 }
