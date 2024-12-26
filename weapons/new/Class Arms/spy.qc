@@ -18,10 +18,10 @@ $cdmaterials "models/player/spy/"
 
 $texturegroup "skinfamilies"
 {
-	{ "spy_body_blue"    }
-	{ "spy_body_red"   }
-	{ "spy_body_yellow"  }
-	{ "spy_body_green" }
+	{ "spy_arms_blue"    }
+	{ "spy_arms_red"   }
+	{ "spy_arms_yellow"  }
+	{ "spy_arms_green" }
 }
 
 $cbox 0 0 0 0 0 0

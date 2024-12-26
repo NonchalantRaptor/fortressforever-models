@@ -18,10 +18,10 @@ $cdmaterials "models/player/hwguy/"
 
 $texturegroup "skinfamilies"
 {
-	{ "hwguy_body_blue"    }
-	{ "hwguy_body_red"   }
-	{ "hwguy_body_yellow"  }
-	{ "hwguy_body_green" }
+	{ "hwguy_arms_blue"    }
+	{ "hwguy_arms_red"   }
+	{ "hwguy_arms_yellow"  }
+	{ "hwguy_arms_green" }
 }
 
 $cbox 0 0 0 0 0 0

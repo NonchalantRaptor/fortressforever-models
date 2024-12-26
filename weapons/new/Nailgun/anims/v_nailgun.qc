@@ -14,7 +14,7 @@ $origin 0 0 1
 $scale 1.0
 
 $attachment "1" "bone_muzzle" 0 0 0 rotate 0 0 0
-$attachment "2" "bone_ejectionPort" 0 0 0 rotate 0 270 0
+$attachment "2" "bone_ejection" -0.70 0.00 0.00 rotate -0 135 90
 
 $body studio "reference_Nailgun.smd"
 

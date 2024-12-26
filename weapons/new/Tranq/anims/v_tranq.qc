@@ -61,6 +61,7 @@ $sequence Idle1 "idle" loop ACT_VM_IDLE 1 fps 30.00
 
 $sequence Fire "fire2" ACT_VM_PRIMARYATTACK 1 fps 30.00 fadein 0 {
 	{ event AE_MUZZLEFLASH 0 "PISTOL 1" }
-	{ event AE_CL_PLAYSOUND 16 "Tranq.cock" }
+	{ event AE_CL_PLAYSOUND 16 "Tranq.cock_back" }
+	{ event AE_CL_PLAYSOUND 23 "Tranq.cock_forward" }
 }
 $include "DefineBones.qci"

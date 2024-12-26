@@ -14,7 +14,7 @@ $origin -2.5 0 -4
 $scale 1.0
 
 $attachment "1" "bone_muzzle" 0 0 0 rotate 0 0 0
-$attachment "2" "bone_ejectionPort" 0 0 0 rotate 0 270 0
+$attachment "2" "bone_ejectionPort" 0.00 0.00 0.00 rotate -45 -90 -0
 
 $body studio "reference_SuperNailgun.smd"
 
@@ -62,8 +62,8 @@ $sequence Idle "idle" loop ACT_VM_IDLE 1 fps 30.00
 
 
 $sequence Reload_pre "reload3" ACT_SHOTGUN_RELOAD_START 1 fps 30.00 {
-	{ event AE_CL_PLAYSOUND 5 "Weapon_SMG1.Special1" }
-	{ event AE_CL_PLAYSOUND 35 "Weapon_SMG1.Special2" }
+	{ event AE_CL_PLAYSOUND 5 "Weapon.Reload1_Mag_Out" }
+	{ event AE_CL_PLAYSOUND 35 "Weapon.Reload1_Mag_In" }
 }
 
 $sequence Reload_main "reload3" ACT_VM_RELOAD 1 fps 30.00 {
@@ -76,8 +76,8 @@ $sequence Reload_post "reload3" ACT_SHOTGUN_RELOAD_FINISH 1 fps 30.00 {
 }
 
 $sequence Reload "reload3" ACT_VM_RELOAD_ALL 1 fps 30.00 {
-	{ event AE_CL_PLAYSOUND 0 "Weapon_SMG1.Special1" }
-	{ event AE_CL_PLAYSOUND 30 "Weapon_SMG1.Special2" }
+	{ event AE_CL_PLAYSOUND 0 "Weapon.Reload1_Mag_Out" }
+	{ event AE_CL_PLAYSOUND 30 "Weapon.Reload1_Mag_In" }
 }
 
 $sequence Fire1 "fire1" ACT_VM_PRIMARYATTACK 1 fps 30.00 fadein 0 {

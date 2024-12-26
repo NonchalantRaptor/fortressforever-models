@@ -119,7 +119,8 @@ $sequence "StartReload" {
 $sequence "Reload" {
 	"anims\reload_loop.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event AE_CL_PLAYSOUND 1 "ic.cocky" }
+	{ event AE_CL_PLAYSOUND 2 "ic.cock_back" }
+	{ event AE_CL_PLAYSOUND 11 "ic.cock_forward" }
 	fadein 0
 	fadeout 0
 	fps 30

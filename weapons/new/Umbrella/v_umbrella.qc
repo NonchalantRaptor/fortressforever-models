@@ -10,7 +10,7 @@ Anims	- FooleyCooley
 
 $modelname "weapons/new/umbrella/v_umbrella.mdl"
 $cdmaterials "models/weapons/umbrella"
-$origin 0 0 0
+$origin 0 5 5
 $scale 1.0
 $body studio "reference_umbrella.smd"
 

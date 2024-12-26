@@ -4,7 +4,7 @@ $cdmaterials "models\weapons\shotgun\"
 $origin -2 -9 -2
 
 $attachment "1" "bone_muzzle" -0.00 0.00 0.00 rotate -0.00 0.00 0.00
-$attachment "2" "bone_ejection" 0.00 0.00 0.00 rotate 0.00 -90.00 0.00
+$attachment "2" "bone_ejection" -0.70 0.00 0.00 rotate -0 135 90
 
 $bonemerge "root"
 $bonemerge "upperarm_l"
@@ -45,7 +45,8 @@ $bonemerge "pinky_1_r"
 $bonemerge "pinky_2_r"
 
 $sequence Draw "Draw" ACT_VM_DRAW 1 fps 30.00 {
-	{ event AE_CL_PLAYSOUND 1 "shotgun.cock" }
+	{ event AE_CL_PLAYSOUND 8 "pelletgun.cock_back" }
+	{ event AE_CL_PLAYSOUND 14 "pelletgun.cock_forward" }
 }
 
 $sequence Idle "idle" loop ACT_VM_IDLE 1 fps 30.00
@@ -53,12 +54,14 @@ $sequence Idle "idle" loop ACT_VM_IDLE 1 fps 30.00
 $sequence Fire "Fire" ACT_VM_PRIMARYATTACK 1 fps 30.00 snap {
 	{ event AE_MUZZLEFLASH 0 "SHOTGUN 1" }
 	{ event AE_CLIENT_EFFECT_ATTACH 8 "EjectBrass_12gauge 2 70" }
-	{ event AE_CL_PLAYSOUND 0 "shotgun.cock" }
+	{ event AE_CL_PLAYSOUND 7 "pelletgun.cock_back" }
+	{ event AE_CL_PLAYSOUND 11 "pelletgun.cock_forward" }
 }
 
 $sequence StartReload "StartReload" ACT_SHOTGUN_RELOAD_START 1 fps 30.00
 $sequence Reload "Reload" ACT_VM_RELOAD 1 fps 30.00 snap
 $sequence FinishReload "FinishReload" ACT_SHOTGUN_RELOAD_FINISH 1 fps 30.00 snap {
-	{ event AE_CL_PLAYSOUND 4 "shotgun.cock" }
+	{ event AE_CL_PLAYSOUND 11 "pelletgun.cock_back" }
+	{ event AE_CL_PLAYSOUND 15 "pelletgun.cock_forward" }
 }
 $include "DefineBones.qci"

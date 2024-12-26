@@ -18,10 +18,10 @@ $cdmaterials "models/player/pyro/"
 
 $texturegroup "skinfamilies"
 {
-	{ "pyro_body_blue"    }
-	{ "pyro_body_red"   }
-	{ "pyro_body_yellow"  }
-	{ "pyro_body_green" }
+	{ "pyro_arms_blue"    }
+	{ "pyro_arms_red"   }
+	{ "pyro_arms_yellow"  }
+	{ "pyro_arms_green" }
 }
 
 $cbox 0 0 0 0 0 0

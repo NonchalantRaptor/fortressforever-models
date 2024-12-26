@@ -5,7 +5,7 @@ $origin 0 0 0
 $scale 1.0
 
 $attachment "1" "bone_muzzle" 0 0 0 rotate 0 0 0
-$attachment "2" "bone_ejectionPort" 0 0 0 rotate 0 270 0
+$attachment "2" "bone_ejectionPort" 0.00 0.00 0.00 rotate -45 -90 -0
 
 $body studio "reference_SuperShotgun.smd"
 
@@ -48,7 +48,8 @@ $bonemerge "pinky_1_r"
 $bonemerge "pinky_2_r"
 
 $sequence Draw "draw" ACT_VM_DRAW 1 fps 30.00 fadein 0 {
-	{ event AE_CL_PLAYSOUND 4 "SuperShotgun.cock" }
+	{ event AE_CL_PLAYSOUND 8 "SuperShotgun.cock_back" }
+	{ event AE_CL_PLAYSOUND 16 "SuperShotgun.cock_forward" }
 }
 
 $sequence Idle1 "idle" loop ACT_VM_IDLE 1 fps 30.00
@@ -57,12 +58,14 @@ $sequence Fire "fire4" ACT_VM_PRIMARYATTACK 1 fps 30.00 snap {
 	{ event AE_MUZZLEFLASH 0 "SHOTGUN 1" }
 	{ event AE_CLIENT_EFFECT_ATTACH 12 "EjectBrass_12gauge 2 70" }
 //	{ event AE_CLIENT_EFFECT_ATTACH 13 "EjectBrass_12gauge 2 70" }
-	{ event AE_CL_PLAYSOUND 4 "SuperShotgun.cock" }
+	{ event AE_CL_PLAYSOUND 8 "SuperShotgun.cock_back" }
+	{ event AE_CL_PLAYSOUND 16 "SuperShotgun.cock_forward" }
 }
 
 $sequence StartReload "reload_start2" ACT_SHOTGUN_RELOAD_START 1 fps 30.00 
 $sequence Reload "reload_loop2" ACT_VM_RELOAD 1 fps 30.00 snap 
 $sequence FinishReload "reload_end2" ACT_SHOTGUN_RELOAD_FINISH 1 fps 30.00 snap {
-	{ event AE_CL_PLAYSOUND 6 "SuperShotgun.cock" }
+	{ event AE_CL_PLAYSOUND 8 "SuperShotgun.cock_back" }
+	{ event AE_CL_PLAYSOUND 16 "SuperShotgun.cock_forward" }
 }
 $include "DefineBones.qci"

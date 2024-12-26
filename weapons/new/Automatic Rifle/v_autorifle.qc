@@ -82,7 +82,7 @@ $sequence "fire01" {
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
 	fadein 0
-	fadeout 0.2
+	fadeout 0
 	snap
 	fps 30
 }
@@ -92,7 +92,7 @@ $sequence "fire02" {
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
 	fadein 0
-	fadeout 0.2
+	fadeout 0
 	snap
 	fps 30
 }
@@ -102,7 +102,7 @@ $sequence "fire03" {
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
 	fadein 0
-	fadeout 0.2
+	fadeout 0
 	snap
 	fps 30
 }
