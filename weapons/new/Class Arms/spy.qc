@@ -1,6 +1,6 @@
 // Created by Crowbar 0.74
 
-$modelname "player/arms/v_spy_arms.mdl"
+$modelname "player/arms/spy_arms.mdl"
 
 $bodygroup "studio"
 {

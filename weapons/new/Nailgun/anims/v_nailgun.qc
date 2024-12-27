@@ -14,10 +14,11 @@ $origin 0 0 1
 $scale 1.0
 
 $attachment "1" "bone_muzzle" 0 0 0 rotate 0 0 0
-$attachment "2" "bone_ejection" -0.70 0.00 0.00 rotate -0 135 90
+$attachment "2" "bone_ejectionPort" 0.00 0.00 -0.00 rotate -45 -90 0
 
 $body studio "reference_Nailgun.smd"
 
+$bonemerge "bone_ejectionPort"
 $bonemerge "root"
 $bonemerge "upperarm_l"
 $bonemerge "upperarm_r"
