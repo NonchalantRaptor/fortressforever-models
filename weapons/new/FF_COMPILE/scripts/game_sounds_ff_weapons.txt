@@ -112,6 +112,18 @@
 			"wave"	"physics\metal\weapon_impact_soft3.wav"
 		}
 	}
+	"Weapon.Mag_Drop"
+	{
+		"channel"	"CHAN_STATIC"
+		"volume"	"0.3"
+		"CompatibilityAttenuation"	"1.0"
+		"rndwave"
+		{
+			"wave"	"physics\metal\weapon_impact_hard1.wav"
+			"wave"	"physics\metal\weapon_impact_hard2.wav"
+			"wave"	"physics\metal\weapon_impact_hard3.wav"
+		}
+	}
 //----------------
 //Projectiles, things that go whizzzzzzzzzz-THUDszzz!
 //----------------
