@@ -16,6 +16,7 @@ $illumposition 5.537 -31.712 -21.568
 $cdmaterials "models\weapons\sniperrifle\"
 
 $attachment "1" "bone_muzzle" 0 0 0 rotate 0 0 0
+$attachment "2" "v_eject" 0.00 0.00 0.00 rotate -0 145 90
 
 $cbox 0 0 0 0 0 0
 
@@ -80,6 +81,7 @@ $sequence "Fire" {
 	"anims\Fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
+	{ event AE_CLIENT_EFFECT_ATTACH 2 "EjectBrass_9mm 2 65" }
 	fadein 0
 	fadeout 0.2
 	fps 30

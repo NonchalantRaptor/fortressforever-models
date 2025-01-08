@@ -2,6 +2,8 @@
 
 $modelname "weapons/new/autorifle/v_autorifle.mdl"
 
+$origin -1.5 -5 -2
+
 $bodygroup "studio"
 {
 	studio "v_autorifle.smd"
@@ -16,6 +18,7 @@ $illumposition 22.959 -6.767 -9.755
 $cdmaterials "models\weapons\autorifle\"
 
 $attachment "1" "bone_muzzle" 0 0 0 rotate 0 0 0
+$attachment "2" "v_eject" 0.00 0.00 0.00 rotate -0 145 90
 
 $cbox 0 0 0 0 0 0
 
@@ -81,6 +84,7 @@ $sequence "fire01" {
 	"anims\fire1.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
+	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 65" }
 	fadein 0
 	fadeout 0
 	snap
@@ -91,6 +95,7 @@ $sequence "fire02" {
 	"anims\fire2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
+	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 65" }
 	fadein 0
 	fadeout 0
 	snap
@@ -101,6 +106,7 @@ $sequence "fire03" {
 	"anims\fire3.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
+	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 65" }
 	fadein 0
 	fadeout 0
 	snap

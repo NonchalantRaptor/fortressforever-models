@@ -14,7 +14,7 @@ $origin 0 0 0
 $scale 1.0
 
 $attachment "1" "bone_muzzle" 0 0 0 rotate 0 0 0
-$attachment "2" "bone_ejectionPort" 0 0 0 rotate 0 270 0
+$attachment "2" "bone_ejectionPort" 0.00 0.00 0.00 rotate 0 135 90
 
 $body studio "v_asscan.smd"
 
@@ -75,14 +75,17 @@ $sequence Idle1 "anim_Idle1" loop ACT_VM_IDLE 1 fps 30.00
 
 $sequence Fire1 "anim_Fire1" ACT_VM_PRIMARYATTACK 1 fps 30.00 snap {
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
-	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 65" }
+	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 75" }
+	{ event AE_CLIENT_EFFECT_ATTACH 2 "EjectBrass_9mm 2 75" }
 }
 $sequence Fire2 "anim_Fire2" ACT_VM_PRIMARYATTACK 1 fps 30.00 snap {
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
-	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 65" }
+	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 75" }
+	{ event AE_CLIENT_EFFECT_ATTACH 2 "EjectBrass_9mm 2 75" }
 }
 $sequence Fire3 "anim_Fire3" ACT_VM_PRIMARYATTACK 1 fps 30.00 snap {
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
-	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 65" }
+	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 75" }
+	{ event AE_CLIENT_EFFECT_ATTACH 2 "EjectBrass_9mm 2 75" }
 }
 $include "DefineBones.qci"

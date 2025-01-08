@@ -45,7 +45,7 @@ $bonemerge "pinky_0_r"
 $bonemerge "pinky_1_r"
 $bonemerge "pinky_2_r"
 
-$sequence hit "anims/hit.smd" fps 30 activity ACT_VM_HITCENTER 1 fadein 0.2 fadeout 0.2 node "hit"
+$sequence hit "anims/hit.smd" fps 30 activity ACT_VM_HITCENTER 1 fadein 0 fadeout 0.2 node "hit"
 $sequence miss "anims/miss.smd" fps 30 activity ACT_VM_MISSCENTER 1 fadein 0.2 fadeout 0.2 node "miss"
 $sequence idle "anims/idle.smd" loop fps 30 activity ACT_VM_IDLE 1 fadein 0.2 fadeout 0.2
 $sequence draw "anims/draw.smd" fps 30 activity ACT_VM_DRAW -1 fadein 0.2 fadeout 2 node "draw"
