@@ -56,16 +56,14 @@ $bonemerge "pinky_0_r"
 $bonemerge "pinky_1_r"
 $bonemerge "pinky_2_r"
 
-$sequence Draw "draw" ACT_VM_DRAW 1 fps 30.00 fadein 0
+$sequence Draw "draw2" ACT_VM_DRAW 1 fps 30.00 fadein 0
 
 $sequence Idle "idle" loop ACT_VM_IDLE 1 fps 30.00
 
 
 $sequence Reload_pre "reload3" ACT_SHOTGUN_RELOAD_START 1 fps 30.00 {
 	{ event AE_CL_PLAYSOUND 5 "Weapon.Reload1_Mag_Out" }
-	{ event AE_CL_PLAYSOUND 15 "Weapon.Mag_Drop" }
 	{ event AE_CL_PLAYSOUND 30 "Weapon.Reload1_Mag_In" }
-	{ event AE_CL_PLAYSOUND 52 "Weapon.Handle_Soft" }
 }
 
 $sequence Reload_main "reload3" ACT_VM_RELOAD 1 fps 30.00 {

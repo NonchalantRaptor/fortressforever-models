@@ -112,4 +112,16 @@ $sequence "fire03" {
 	snap
 	fps 30
 }
+
+$sequence "reload" {
+	"anims\reload.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event AE_CL_PLAYSOUND 1 "Weapon.Reload2_Mag_In" }
+	{ event AE_CL_PLAYSOUND 18 "Weapon.Reload2_Bolt_Back" }
+	{ event AE_CL_PLAYSOUND 24 "Weapon.Reload2_Bolt_Forward" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
 $include "DefineBones.qci"

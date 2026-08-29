@@ -75,4 +75,15 @@ $sequence Fire3 "fire3" ACT_VM_PRIMARYATTACK 1 fps 30.00 fadein 0 {
 	{ event AE_MUZZLEFLASH 0 "SMG1 1" }
 	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 65" }
 }
+
+$sequence "reload" {
+	"reload.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event AE_CL_PLAYSOUND 7 "Weapon.Reload1_Mag_Out" }
+	{ event AE_CL_PLAYSOUND 24 "Weapon.Reload1_Mag_In" }
+	fadein 0
+	fadeout 0.2
+	fps 30
+}
+
 $include "DefineBones.qci"
